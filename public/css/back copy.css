@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+
+.main-heading {
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.bq {
+    font-size: 23px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.ab-img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.bc-img {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.cd-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.ttg {
+    margin-left: 7%;
+}
+
+.fqlp {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.au-img {
+    width: 100%;
+}
+
+.vfy {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.im {
+    margin-right: 9%;
+}
+
+.gs-bt {
+    background-color: #ea00ff;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 23px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.bb {
+    font-family: "Cantata One", serif;
+}
+
+.underline {
+    height: 4px;
+    width: 84px;
+    background-color: #ea00ff;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.cdd {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tb {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 2%;
+    color: white;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.top-im {
+    /* animation: skew 3s;
+    transform: skew(10deg);
+    animation-direction: alternate; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ab-img1 {
+    border: 12px ridge #cd7f32;
+    box-shadow: 1px 1px 4px 4px #cd7f32;
+
+    transition: 0.4s;
+    width: 20%;
+    height: 270px;
+    border-radius: 5px;
+}
+
+.bc-img1 {
+    border: 12px ridge goldenrod;
+    box-shadow: 1px 1px 4px 4px goldenrod;
+    width: 30%;
+    height: 370px;
+    border-radius: 5px;
+}
+
+.cd-img1 {
+    border: 12px ridge #f0eafd;
+    box-shadow: 1px 1px 4px 4px #f0eafd;
+    width: 20%;
+    height: 320px;
+    border-radius: 5px;
+}
+
+.lp-sr {
+    margin-top: 6%;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.cfd {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.x-zoom {
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* @keyframes skew {
+    0% {
+        transform: skewX(20deg);
+    }
+    100% {
+        transform: skewX(-20deg);
+    }
+} */
+
+.w-img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.und {
+    height: 3px;
+    margin-top: 0.5%;
+    width: 32px;
+    background-color: #00afea;
+    border-radius: 10px;
+}
+
+.box-card {
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 27%;
+
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+.box-card1 {
+    background-color: #fff;
+    width: 110px;
+    margin-left: 4%;
+    border-radius: 10px;
+}
+
+.hip {
+    letter-spacing: 0.5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.box-card .box-card-body .box-card-heading {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 3%;
+    color: white;
+}
+
+@media (max-width: 426px) {
+    .box-card {
+        background-color: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.7);
+        margin-bottom: 15px;
+        padding: 10px;
+        width: 105px;
+        margin-left: 2%;
+        border-radius: 10px;
+    }
+
+    .box-card1 {
+        background-color: #fff;
+        width: 110px;
+        margin-left: 2%;
+        border-radius: 10px;
+    }
+}
+
+.pop {
+    position: absolute;
+    color: white;
+    margin-top: 4%;
+}
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+    display: block;
+    vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 3000px;
+    background-color: #000000;
+} /* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #ff0000;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.js-count-particles {
+    font-size: 1.1em;
+}
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#stats {
+    display: none;
+
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+.count-particles {
+    border-radius: 0 0 3px 3px;
+    display: none;
+}

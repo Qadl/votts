@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+}
+canvas {
+    display: block;
+    vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    background-color: #000000;
+} /* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #ff0000;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.js-count-particles {
+    font-size: 1.1em;
+}
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#stats {
+    display: none;
+
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+.count-particles {
+    border-radius: 0 0 3px 3px;
+    display: none;
+}
+
+.dye {
+    height: 100px;
+}
+.cee {
+    margin-top: -1%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.x-wrp h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+.x-wrp h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #00afea;
+}
+.x-wrp form {
+    margin-top: 30px;
+}
+.x-wrp form .input-box {
+    height: 52px;
+    margin: 18px 0;
+}
+
+.prvimg {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px inset silver;
+}
+
+.d-prv {
+    margin-top: 3%;
+}
+
+.x-sbt {
+    width: 60%;
+    font-size: 19px;
+    margin-top: 2%;
+}
+
+.x-all {
+    position: relative;
+    width: 85%;
+    margin-top: -4%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(110, 110, 110, 0.678);
+}
+
+.main-heading {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.mhp {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.underline {
+    height: 4px;
+    width: 84px;
+    background-color: #00afea;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
