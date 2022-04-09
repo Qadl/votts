@@ -1,0 +1,258 @@
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+    display: block;
+    vertical-align: bottom;
+} /* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background-color: #000000;
+} /* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #ff0000;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.js-count-particles {
+    font-size: 1.1em;
+}
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#stats {
+    display: none;
+
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+.count-particles {
+    border-radius: 0 0 3px 3px;
+    display: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.oul {
+    border: 2px solid #00afea;
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    transition: 0.3s;
+}
+
+.oul:hover {
+    border: 2px solid #f530f5;
+    transition: 0.3s;
+}
+
+/* .bd {
+    background-color: black;
+} */
+
+.x-zoom {
+    animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.cee {
+    margin-top: -2%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Josefin Sans", sans-serif;
+}
+.x-wrp {
+    position: relative;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(110, 110, 110, 0.678);
+}
+.x-wrp h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+.x-wrp h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #00afea;
+}
+.x-wrp form {
+    margin-top: 30px;
+}
+.x-wrp form .input-box {
+    height: 52px;
+    margin: 18px 0;
+}
+
+form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    border-bottom-width: 2.5px;
+    border-radius: 4px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid {
+    border-color: none;
+}
+form .policy {
+    display: flex;
+    align-items: center;
+}
+form h3 {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.gs-ib {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #c7bebe;
+    border-color: #00afea;
+    background: white;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* .d-se {
+    display: none;
+} */
+.se-btn {
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #00afea;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+.se-btn:hover {
+    background: #0157f7;
+}
+
+.se-btn3 {
+    color: black;
+    letter-spacing: 0.5px;
+    border: none;
+    background: none;
+    margin-top: 1.5%;
+    padding: 8px;
+    cursor: pointer;
+    width: 35%;
+    text-align: center;
+    border-radius: 3px;
+    height: 30px;
+    font-size: 13px;
+}
+.se-btn3:hover {
+    background: #00afea;
+    border-radius: 3px;
+}
+
+.se-btn2 {
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #00afea;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+.se-btn2:hover {
+    background: #0157f7;
+}
+form .text h3 {
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+form .text h3 .a {
+    color: #00afea;
+    text-decoration: none;
+}
+form .text h3 .a:hover {
+    text-decoration: underline;
+    color: #00afea;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+@media (max-width: 426px) {
+    .x-wrp {
+        position: relative;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 34px;
+        border-radius: 6px;
+        margin-top: -80%;
+
+        box-shadow: 0 5px 10px rgba(110, 110, 110, 0.678);
+    }
+
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        background-color: #000000;
+    }
+}

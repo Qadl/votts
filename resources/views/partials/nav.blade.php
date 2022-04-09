@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-light n-m">
             <div class="container-fluid">
                 <a class="navbar-brand lg" href="#" style="color: black">
-                    <img src="/img/Votts Blue.png" class="v-img">
+                    <img src="/img/Vottsblue.png" class="v-img">
 
 
                 </a>
