@@ -6,11 +6,11 @@
     background: white;
     box-shadow: 1px 1px 1px 1px #000000;
     transition: 0.4s;
+    height: 70px;
+
 }
 
-.active {
-    color: #ea00ff;
-}
+
 
 .v-img {
     width: 60%;
@@ -24,11 +24,6 @@
     transition: 0.4s;
 }
 
-.vh:hover {
-    color: #ea00ff;
-
-    transition: 0.4s;
-}
 
 .n-m:hover {
     box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);

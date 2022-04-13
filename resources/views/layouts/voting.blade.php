@@ -16,7 +16,7 @@
 
 <body class="bd ">
     <div id="particles-js">
-        @include('partials.nav')
+        @include('partials.vnavv')
 
 
     </div>

@@ -19,7 +19,7 @@
 
     <div id="particles-js">
 
-        @include('partials.dnav')
+        @include('partials.vnavv')
 
 
 
@@ -54,6 +54,10 @@
 
                 <div class="col-md-12 text-center d-name">
                     <p>{{$cprof->fName}} {{$cprof->lName}} </p>
+                </div>
+
+                <div class="col-md-12 text-center d-name2">
+                    <p>Nick: {{$cprof->nick}} </p>
                 </div>
 
                 <div class="col-md-12 text-center x-zoom">

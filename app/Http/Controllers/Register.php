@@ -8,6 +8,7 @@ use App\Models\Key;
 use App\Models\Keyv;
 use App\Models\User;
 use App\Models\Votes;
+use App\Notifications\welcomeMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -30,6 +31,8 @@ class Register extends Controller
             'roles' => $request->roles,
 
         ]);
+
+        $user->notify(new welcomeMail($user));
 
         Auth::loginUsingId($user->id);
 

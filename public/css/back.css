@@ -60,7 +60,7 @@
 }
 
 .gs-bt {
-    background-color: #ea00ff;
+    background-color: #00afea;
     border-radius: 8px;
     outline: none;
     border: none;
@@ -76,7 +76,7 @@
 .underline {
     height: 4px;
     width: 84px;
-    background-color: #ea00ff;
+    background-color: #00afea;
     border-radius: 10px;
     margin-bottom: 14px;
 }
@@ -220,24 +220,6 @@
     color: white;
 }
 
-@media (max-width: 426px) {
-    .box-card {
-        background-color: #fff;
-        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.7);
-        margin-bottom: 15px;
-        padding: 10px;
-        width: 105px;
-        margin-left: 2%;
-        border-radius: 10px;
-    }
-
-    .box-card1 {
-        background-color: #fff;
-        width: 110px;
-        margin-left: 2%;
-        border-radius: 10px;
-    }
-}
 
 .pop {
     position: absolute;
@@ -293,4 +275,29 @@ canvas {
 .count-particles {
     border-radius: 0 0 3px 3px;
     display: none;
+}
+
+
+
+@media (max-width: 426px) {
+    .box-card {
+        background-color: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.7);
+        margin-bottom: 15px;
+        padding: 10px;
+        width: 105px;
+        margin-left: 2%;
+        border-radius: 10px;
+    }
+
+    .box-card1 {
+        background-color: #fff;
+        width: 110px;
+        margin-left: 2%;
+        border-radius: 10px;
+    }
+
+    .pop{
+        margin-top: 14%;
+    }
 }

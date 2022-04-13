@@ -65,14 +65,14 @@
 
 
         </div>
-        <div class='d-all'>
+        <div class=' container-fluid d-all'>
 
             @if(count($cands)>0)
             @foreach($cands as $cand)
-            <div class="fn">
-                <div class="d-xti"> <img src="{{asset('uploads/images/'.$cand->image)}}" class="xt-img">
+            <div class=" row fn">
+                <div class="col-sm-3 d-xti"> <img src="{{asset('uploads/images/'.$cand->image)}}" class="xt-img">
                 </div>
-                <div class="i-fn">
+                <div class="col-sm-5 i-fn">
                     <h4>{{$cand->fName}} {{$cand->lName}} </h4>
                     <p>Nick : {{$cand->nick}}</p>
                     <p>Candidate ID : {{$cand->user_id}}</p>
@@ -80,9 +80,9 @@
 
                 </div>
 
-                <div class="p-fn">
-                    <button class="btn v-btn">
-                        <a href="{{'c/'.Str::slug($cand->nick).'/'.$cand->id}}" class="nav-link text-dark"> GO TO PROFILE</a></button>
+                <div class="col-sm-3 p-fn">
+
+                    <a href="{{'c/'.Str::slug($cand->nick).'/'.$cand->id}}"> <button class="btn v-btn">GO TO PROFILE</button> </a>
                 </div>
 
 

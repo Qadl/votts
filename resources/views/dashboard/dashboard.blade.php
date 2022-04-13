@@ -19,7 +19,7 @@
     <div id="particles-js">
 
 
-        @include('partials.nav')
+        @include('partials.vnavv')
         @include('partials.sidenav')
 
 

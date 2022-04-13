@@ -74,33 +74,10 @@
             </form>
         </div>
 
-        <!-- <div class="wrapper" v-if="signin">
-            <h2>Log In</h2>
-            <form action="" method="post" @submit.prevent="SignIn()">
-                <div class="input-box">
-                    <input v-model="email" type="text" placeholder="Email" required />
-                </div>
-                <div class="emailerr" v-html="emErr"></div>
-                <div class="input-box">
-                    <input v-model="password" type="password" placeholder="Password" required />
-                </div>
-                <div class="passerr" v-html="pErr"></div>
 
-                <div class="input-box button">
-                    <input type="Submit" value="Login Now" />
-                </div>
-                <div class="text">
-                    <h3>
-                        Dont have an account?
-                        <span class="a" @click="stsignUp()">SignUp now</span>
-                    </h3>
-                </div>
-            </form>
-        </div> -->
     </div>
 
 
-    <!-- <div class="oul x-zoom" style="margin-top: 3%;"></div> -->
 </body>
 
 </html>
