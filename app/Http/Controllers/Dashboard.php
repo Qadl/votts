@@ -51,7 +51,7 @@ class Dashboard extends Controller
         $vtct = DB::table('votes')->where('cand_id', $cprof->user_id)->sum('votesNo');
 
 
-        return view('layouts.fvprofile', ['cprof' => $cprof, 'vtct' => $vtct, 'cimg' => $cimg]);
+        return view('layouts.fvprofile', ['cprof' => $cprof, 'vtct' => $vtct]);
     }
 
     public function fv(Request $request, $user_id)
