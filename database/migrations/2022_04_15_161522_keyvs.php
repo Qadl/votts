@@ -15,8 +15,9 @@ class Keyvs extends Migration
     { { {
                 Schema::create('keyvs', function (Blueprint $table) {
                     $table->id();
-                    $table->string('secret');
-
+                    $table->string('fName');
+                    $table->string('lName');
+                    $table->string('secretv');
                     $table->integer('user_id');
                     $table->timestamps();
                 });
