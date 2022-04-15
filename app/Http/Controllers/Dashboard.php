@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Imageadd;
 use App\Models\Info;
 use App\Models\User;
 use App\Models\Votes;
@@ -17,7 +16,6 @@ class Dashboard extends Controller
         $query = DB::table('infos')->where('user_id', $validUser)->first();
         $keyy = DB::table('keys')->where('user_id', $validUser)->first();
         $vtct1 = DB::table('votes')->where('cand_id', $validUser)->sum('votesNo');
-        $cimg = DB::table('imageadds')->where('user_id', $validUser)->first();
 
 
         return view('dashboard.dashboard', ['query' => $query, 'keyy' => $keyy, 'vtct1' => $vtct1]);
@@ -29,7 +27,6 @@ class Dashboard extends Controller
         $validUser = auth()->user()->id;
         $cid = DB::table('infos')->where('user_id', $validUser)->first();
         $vtct1 = DB::table('votes')->where('cand_id', $validUser)->sum('votesNo');
-        $cimg = DB::table('imageadds')->where('user_id', $validUser)->first();
 
 
 
@@ -52,7 +49,6 @@ class Dashboard extends Controller
     {
         $cprof = Info::find($user_id);
         $vtct = DB::table('votes')->where('cand_id', $cprof->user_id)->sum('votesNo');
-        $cimg = DB::table('imageadds')->where('user_id', $cprof->user_id)->first();
 
 
         return view('layouts.fvprofile', ['cprof' => $cprof, 'vtct' => $vtct, 'cimg' => $cimg]);

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Imageadd;
+// use App\Models\Imageadd;
 use App\Models\Info;
 use App\Models\Key;
 use App\Models\Keyv;
@@ -115,26 +115,26 @@ class Register extends Controller
 
 
 
-    public function snap(Request $request)
-    {
+    // public function snap(Request $request)
+    // {
 
 
-        $request->validate([
-            'image' => "required|mimes:jpg,png,jpeg|max:5048",
+    //     $request->validate([
+    //         'image' => "required|mimes:jpg,png,jpeg|max:5048",
 
-        ]);
+    //     ]);
 
-        $newImagename = 'VTS' . uniqid() . '.' . $request->image->extension();
-        $request->image->move('uploads/images/', $newImagename);
+    //     $newImagename = 'VTS' . uniqid() . '.' . $request->image->extension();
+    //     $request->image->move('uploads/images/', $newImagename);
 
-        $img = Imageadd::create([
-            'image' => $newImagename,
-            'user_id' => auth()->user()->id,
-        ]);
+    //     $img = Imageadd::create([
+    //         'image' => $newImagename,
+    //         'user_id' => auth()->user()->id,
+    //     ]);
 
-        session()->flash('success', 'Image added succesfully!');
-        return redirect()->route('dashboard');
-    }
+    //     session()->flash('success', 'Image added succesfully!');
+    //     return redirect()->route('dashboard');
+    // }
 
 
     public function vKey(Request $request)

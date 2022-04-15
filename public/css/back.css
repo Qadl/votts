@@ -12,6 +12,10 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
+b{
+    display: none;
+}
+
 .bq {
     font-size: 23px;
     font-family: "Josefin Sans", sans-serif;
