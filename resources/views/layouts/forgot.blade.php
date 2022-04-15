@@ -23,50 +23,38 @@
 
     <div class="cee x-zoom">
         <div class="wrapper">
-            <h2>Log In</h2>
-            <form action="{{route('login')}}" method="post" enctype="multipart/form-data">
-                @if ($success=Session::get('error'))
-                <div class="alert alert-danger">
-                    <strong>{{$success}}</strong>
+            <h2>Forgot Password</h2>
+            <form action="{{route('forgot')}}" method="post" @submit.prevent="SignUp()" enctype="multipart/form-data">
+
+
+                @if ($success=Session::get('success'))
+                <div class="alert alert-success">
+                    <small>{{$success}}</small>
 
                 </div>
                 @endif
 
+
                 <div class="input-box">
-                    <input type="email" value="{{old('email')}}" name="email" class="form-control @error('email') is-invalid @enderror" id="" placeholder='email' />
+                    <input type="email" value="{{old('email')}}" name="email" class="form-control @error('email') is-invalid @enderror" id="" placeholder='Enter your email' />
                     @error('email')
-                    <small class="text-danger">{{$message}}</small>
+                    <small class="text-danger mt-1" style="font-size: 13px; margin-top: 1%">{{$message}}</small>
                     @enderror
                 </div>
 
-                <div class="input-box">
-                    <input type="password" value="{{old('password')}}" name="password" class="form-control @error('password') is-invalid @enderror" id="" placeholder='password' />
-                    @error('password')
-                    <small class="text-danger">{{$message}}</small>
-                    @enderror
-                </div>
 
-                @csrf
 
-                <div>
-                    <a href="/forgot_password" class="nav-link text-center fgt">Forgot Password?</a>
-                </div>
 
                 <div class="input-box button">
-                    <input type="Submit" value="Login Now" />
+                    <input type="Submit" value="Submit" />
                 </div>
-                <div class="text">
-                    <h3>
-                        Dont have an account?
-                        <a class="a" href="cand_reg">SignUp now</a>
-                    </h3>
-                </div>
+                @csrf
+
             </form>
         </div>
 
     </div>
 
-    <!-- <div class="oul x-zoom" style="margin-top: 3%;"></div> -->
 </body>
 
 </html>

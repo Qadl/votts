@@ -33,7 +33,7 @@
                             <a href="#" class="nav-link nb" style="color: black">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="see" class="nav-link nb" style="color: black">LogOut</a>
+                            <a href="/logout" class="nav-link nb" style="color: black">LogOut</a>
                         </li>
                     </ul>
                 </div>

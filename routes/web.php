@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\ForgotPassword;
 use App\Http\Controllers\Register;
+use App\Http\Controllers\ResetPassword;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -120,3 +122,12 @@ Route::get('voter_secret', function () {
 
 
 Route::post('voter_secret', [Register::class, 'vKey'])->name('secretv');
+
+Route::get('/logout', [Register::class, 'logout'])->name('logout');
+
+Route::get('/forgot_password', [ForgotPassword::class, 'forgot'])->name('forgot');
+
+Route::post('/forgot_password', [ForgotPassword::class, 'password'])->name('forgot');
+
+Route::get('/reset_password/{token}', [ResetPassword::class, 'getPassword'])->name('reset');
+Route::post('/reset_password', [ResetPassword::class, 'updatePassword']);

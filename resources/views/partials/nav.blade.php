@@ -17,7 +17,7 @@
     <div class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light n-m">
             <div class="container-fluid">
-                <a class="navbar-brand lg" href="#" style="color: black">
+                <a class="navbar-brand lg" href="/" style="color: black">
                     <img src="/img/Vottsblue.png" class="v-img">
 
 
@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item ">
-                            <a href="#" class="nav-link active nb" aria-current="page" style="color: black">Home</a>
+                            <a href="/" class="nav-link active nb" aria-current="page" style="color: black">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link nb" style="color: black">About Us</a>

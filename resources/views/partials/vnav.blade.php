@@ -16,7 +16,7 @@
     <div class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light n-m">
             <div class="container-fluid">
-                <a class="navbar-brand lg" href="#" style="color: black">
+                <a class="navbar-brand lg" href="/" style="color: black">
                     <img src="/img/Vottsblue.png" class="v-img">
 
 
@@ -33,7 +33,7 @@
                             <a href="#" class="nav-link nb" style="color: black">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="see" class="nav-link nb" style="color: black">LogOut</a>
+                            <a href="/logout" class="nav-link nb" style="color: black">LogOut</a>
                         </li>
                     </ul>
                 </div>

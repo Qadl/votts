@@ -23,44 +23,49 @@
 
     <div class="cee x-zoom">
         <div class="wrapper">
-            <h2>Log In</h2>
-            <form action="{{route('login')}}" method="post" enctype="multipart/form-data">
-                @if ($success=Session::get('error'))
-                <div class="alert alert-danger">
+            <h2>Reset Password</h2>
+            <form action="/reset_password" method="post" enctype="multipart/form-data">
+
+
+                @if ($success=Session::get('success'))
+                <div class="alert alert-success">
                     <strong>{{$success}}</strong>
 
                 </div>
                 @endif
 
-                <div class="input-box">
-                    <input type="email" value="{{old('email')}}" name="email" class="form-control @error('email') is-invalid @enderror" id="" placeholder='email' />
-                    @error('email')
-                    <small class="text-danger">{{$message}}</small>
-                    @enderror
-                </div>
-
-                <div class="input-box">
-                    <input type="password" value="{{old('password')}}" name="password" class="form-control @error('password') is-invalid @enderror" id="" placeholder='password' />
-                    @error('password')
-                    <small class="text-danger">{{$message}}</small>
-                    @enderror
-                </div>
-
                 @csrf
 
-                <div>
-                    <a href="/forgot_password" class="nav-link text-center fgt">Forgot Password?</a>
+
+                <input type="hidden" name="token" value="{{ $token }}">
+
+
+                <div class="input-box">
+                    <input type="email" value="{{old('email')}}" name="email" class="form-control @error('email') is-invalid @enderror" id="" placeholder='Enter your email' />
+                    @error('email')
+                    <small class="text-danger mt-1" style="font-size: 13px; margin-top: 1%">{{$message}}</small>
+                    @enderror
+                </div>
+                <div class="input-box">
+                    <input type="password" value="{{old('password')}}" name="password" class="form-control @error('password') is-invalid @enderror" id="" placeholder='new password' />
+                    @error('password')
+                    <small class="text-danger mt-1" style="font-size: 13px; margin-top: 1%">{{$message}}</small>
+                    @enderror
                 </div>
 
+                <div class="input-box">
+                    <input type="password" name="password_confirmation" class="form-control @error('password') is-invalid @enderror" id="" placeholder='confirm password' />
+                    @error('password')
+                    <small class="text-danger mt-1" style="font-size: 13px; margin-top: 1%">{{$message}}</small>
+                    @enderror
+                </div>
+
+
+
                 <div class="input-box button">
-                    <input type="Submit" value="Login Now" />
+                    <input type="Submit" value="Reset" />
                 </div>
-                <div class="text">
-                    <h3>
-                        Dont have an account?
-                        <a class="a" href="cand_reg">SignUp now</a>
-                    </h3>
-                </div>
+
             </form>
         </div>
 

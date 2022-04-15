@@ -174,8 +174,9 @@ class Register extends Controller
         return redirect()->route('dashv');
     }
 
-    public function ed($id)
+    public function logout(Request $request)
     {
-        $inf = Info::find($id);
+        Auth::logout();
+        return redirect('/');
     }
 }

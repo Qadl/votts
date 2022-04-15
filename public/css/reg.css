@@ -16,6 +16,14 @@
     transition: 0.3s;
 }
 
+.fgt {
+    color: #00afea;
+    text-decoration: none;
+}
+.fgt:hover {
+    text-decoration: underline;
+    color: #00afea;
+}
 /* .bd {
     background-color: black;
 } */
