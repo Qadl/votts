@@ -32,7 +32,6 @@ class Register extends Controller
 
         ]);
 
-        $user->notify(new welcomeMail($user));
 
         Auth::loginUsingId($user->id);
 
