@@ -1,4 +1,4 @@
-LINK TO THE PORJECT : http://votts.herokuapp.com/
+LINK TO THE PROJECT : http://votts.herokuapp.com/
 
 
 
